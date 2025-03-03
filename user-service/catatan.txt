@@ -1,0 +1,31 @@
+sebelumya
+harus punya config.json
+    liat aja contohnya di config.json
+
+1. buat error handling
+1.1 buat di folder constant, di sana buat semacam variable error yang akan digunakan dan dimapping
+2. buat common/response
+3. buat common/utils
+4. buat config
+4.1 isinya config database
+5. buat DTO
+5.1 isinya buat seperti response/request api yang akan kita gunakan
+6. buat models
+6.1 ya buat model kyk biasa, sesuai dengan database
+7. buat seeder
+7.1 mulai dari user seeder hingga role seeder
+7.2 kita registry
+8. buat repositories
+8.1 buat repository user dan registry nya
+9. buat service
+10. buat controllers
+10.1 buat untuk user controllernya dulu
+10.2 baru kita registry
+11. buat middleware
+11.1 ada HandlePanic(), RateLimitter, extractBearerToken, responseUnauthorized, validateAPIKey
+12. route
+12.1 buat folder user/user.go
+12.2 kalau udah buat beserta func() nanti registry
+13. Buat main di folder cmd
+13.1 isi dengan main.go
+13.2 kalau sudah diisi, registrasi kan ke file main.go utama
